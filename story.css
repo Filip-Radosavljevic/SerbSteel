@@ -1,0 +1,16 @@
+.feed {
+    margin-left: 10%;
+}
+.feed img {
+    top: 10%;
+}
+
+.explain {
+color: #000;
+display: block;
+width: 30%;
+font-size: 19px;
+line-height: 2em;
+margin-left: 60%;
+margin-top: -190%;
+}
