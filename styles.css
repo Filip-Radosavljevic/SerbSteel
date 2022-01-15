@@ -3,7 +3,160 @@
     text-decoration: none;
     list-style: none;
     padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    scroll-behavior: smooth;
+}
+    
+
+
+
+
+    @media screen and (max-width: 500px)  {
+       
+
+
+        #navigation-mobile .button {
+            display: none;
+        }
+        #navigation-mobile i {
+            display: block !important;
+        }
+
+        
+        
+        .logo_container h1 {
+        display: none !important;
+            
+        }
+       
+        .texten {
+            width: 90% !important;
+            font-size: 32px !important;
+        }
+        .texten1 {
+            font-size: 20px !important;
+        }
+        #whiteback {
+            display: block !important;
+            height: 200%;
+        }
+        .hamburg button {
+            display: block !important;
+        }
+        .logo {
+            left: 0px !important;
+
+        }
+        .logo img:hover {
+            opacity: 0.7 !important;
+        }
+
+        .navigation {
+            display: none;
+            flex-direction: column !important;
+            width: 100% !important;
+            right: 0px !important;
+            z-index: 2;
+            transform: translateY(-115%);
+            
+
+            
+       
+            
+         
+            
+        }
+
+        .navigation.active{
+      
+            display: block !important;
+  
+            background-color: #fff !important;
+            
+  
+          
+        
+          }
+
+        .navigation li a {
+            background-color: rgb(8, 8, 8);
+            color: rgb(255, 255, 255) !important;
+            align-items: center !important;
+        }
+
+     
+
+        .navigation.show {
+            display: flex !important;
+            
+        }
+        
+        
+        .navigation li  {
+          
+            max-width: 150px;  
+            
+        }
+        .hamburg button:hover {
+            color: #f00 !important;
+        }
+        .navigation-mobile i {
+            top: 30px;
+            left: 240px;
+            line-height: 0.7;
+            position: fixed;
+        }
+        
+
+        
+        
+
+
+        
+   }
+
+   .hamburg button{
+       color: white;
+       border: none;
+       background: transparent;
+       font-size: 32px;
+       cursor: pointer;
+       margin-left: 300px;
+       display: none;
+       margin-top: 17px;
+       
+      
+       
+   }
+
+   .hamburg:focus {
+       outline: none;
+   }
+    
+   @media only screen and (max-width: 900px) {
+
+    .logo_container h1 {
+        display: none !important;
+    }
+   }
+    
+
+
+
+
+
+label {
+   
+    margin: 20px 40px 0 0;   
+    
+}
+
+
+
+
 
 
 
@@ -11,9 +164,9 @@
     width: 100%;
     height: 80px;
     display: block;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     transition: 300ms ease-in-out;
     /* border-bottom:rgba(255, 255, 255, 0.4) 1px solid; */
     
@@ -29,7 +182,7 @@
     width: 100%;
     height: 80px;
     display: block;
-    background: grey;
+    background: rgba(128, 128, 129, 0.9);
     position: fixed;
     z-index: 3;
     border: none;
@@ -44,47 +197,61 @@
     height: 100%;
     display: block;
     margin: 0 auto;
+    top: 0%;
    
 }
 
 
 .logo_container {
-    height: 100%;
-    display: table;
+    height: 90%;
     float: left;
 }
 .logo {
     height: 80px;
-    left: 15px;
+    left: 0px;
     position: absolute;
+    bottom: 4px;
 }
 .logo_container h1 {
     color: #fff;
     height:  100%;
     display: table-cell;
     vertical-align: middle;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px; 
-    font-weight: 100;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 36px; 
+    
+   
+    
 }
+.logo_container h1::first-letter
+{
+    font-size: 175%;
+}
+
 
 .logo_container h1 span {
-font-weight: 800;
+    font-weight: 500;
 }
 
+
+
+
 .navigation {
-    float: right;
-    height: 100%;
+    height: 100vh;
     margin: 0;
+    display: none;
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    top: 80px;
+    background-color: rgba(0, 0, 0, 0.95)
 }
 /* .navigation a:last-child {
     padding-right: 0;
 } */
 .navigation li {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
+    margin: 40px 15px;
+    padding: 0px 10px;
+    
    
 }
 
@@ -93,10 +260,57 @@ font-weight: 800;
     vertical-align: middle;
     height: 50%;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
   
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navigation-mobile {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+#navigation-mobile li a {
+    font-family:  'Be Vietnam Pro', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation li:first-child {
+    margin-top: 0;
+}
+
+.navigation li:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -113,7 +327,7 @@ font-weight: 800;
     margin-right: 0;
 } */
 
-.navigation .button{
+.navigation .button, #navigation-mobile .button{
    
     color: #FFF;
     padding: 10px 10px;
@@ -123,7 +337,8 @@ font-weight: 800;
     position: relative;
     z-index: 1;
 }
-.navigation .button:before{
+.navigation .button:before, 
+#navigation-mobile .button:before{
     transition: 0.5s all ease-in;
     position: absolute;
     top: 0;
@@ -136,13 +351,15 @@ font-weight: 800;
 
 }
 
-.navigation .button:hover{
+.navigation .button:hover,
+ #navigation-mobile .button:hover {
 
    
     background-color: red;  
 } 
 
-.navigation .button:hover::before {
+.navigation .button:hover::before, 
+#navigation-mobile .button:hover::before {
     transition: 0.4s all ease;
     left: 0;
     right: 0;
@@ -178,6 +395,13 @@ font-weight: 800;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+
+.arrowdown img {
+    height: 200px;
+    margin-left: 42%;
+    transform: translateY(-50%, 50%);
+    margin-top: 30%;
 }
 
 .text1 {
@@ -230,10 +454,10 @@ margin-top: 100px;
 }
 
 .texten1 {
-    color: white;
+    color: rgb(189, 7, 7);
     display: block;
     width: 40%;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 2em;
     margin-left: 55%;
     margin-top:-228px;
@@ -293,4 +517,12 @@ p {
     text-align: center;
     margin-bottom: 10px;
 }
+
+ a:hover {
+    color: #f00;
+    text-decoration: underline;
+   
+ }
+
+
 

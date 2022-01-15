@@ -13,7 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 
-  
+  <style type="text/css">
+    script img{ 
+        width: 25%;
+        margin-bottom: 30px;
+    }
+</style>
+
     </head>
   
   
@@ -22,7 +28,7 @@
 
     <div class="header">
 
-        <a href="index.html"><img src="logoserb.png" class="logo"></a>
+        <a href="index.html"><img src="logoza" class="logo"></a>
         <div class="inner_header">
             <div class="logo_container">
                 <h1>Serb<span>Steel</span></h1>
@@ -52,8 +58,22 @@
 </div>
 
 <div class="explain">
-    <h3>Is partly going to include posts from instagram but on the website but also extra premium content.</h3>
+    <h3>SerbMentality - Stories</h3>
 </div>
+
+<h1 style="text-align: center">This is the stories you can read more about</h1>
+    	<div id="instafeed-container"></div>
+
+<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJXVTFJUk5uVHMyZAV91OVhjSXZAfR3YyUHdwQXUzcXU5WE53SjlOc1lGcVc0VDNXaVpGLW5HVWhhMl9YSlVhWjR0dHhGZAmh2ZAzNYek43NHZAhbHNqTFlEeXByTElDUDZATOWlEOGNBVmQxell0RlZAqagZDZD'
+	});
+	userFeed.run();
+	</script>
 
 </body>
 </html>

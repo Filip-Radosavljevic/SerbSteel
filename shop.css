@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+
+html, body {
+    scroll-behavior: smooth;
+}
 .bundleback {
     width: 100%;
     height: 100%;
@@ -114,19 +118,22 @@
     filter: opacity(50%);
 }
 
-.products h1 {
+#products h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #fff;
+    text-decoration-line: underline;
 }
-.products {
+#products {
     width: 100%;
     height: 100%;
-    background-color: rgb(175, 175, 175);
-    top: 100%;
+    background-color: grey;
+    top: 150%;
     position: absolute;
+    
 }
 
 .svartt img {
@@ -135,6 +142,18 @@
     left: 5%;
     cursor: pointer;
     position: absolute;
+}
+
+
+.svartt img:hover {
+    filter: brightness(70%);
+}
+.vita img:hover {
+    filter: brightness(70%);
+}
+
+.sto img:hover {
+    filter:contrast(40%)
 }
 .vita img {
     height: 470px;
@@ -151,6 +170,34 @@
     position: absolute;
 }
 
+
+#beskriva {
+    background: rgb(59, 59, 59);
+    width: 100%;
+    height: 50%;
+    top: 100%;
+    position: absolute;
+    
+
+}
+#beskriva p {
+top: 100%;
+color: #fff;
+display: block;
+width: 60%;
+margin-left: 22%;
+font-size: 28px;
+line-height: 2em;
+text-align: center;
+
+}
+
+.bundleback img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 
 
 
