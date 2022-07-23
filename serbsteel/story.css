@@ -1,0 +1,24 @@
+
+
+.explain {
+color: #000;
+display: block;
+width: 30%;
+font-size: 19px;
+line-height: 2em;
+margin-left: 60%;
+margin-top: -190%;
+}
+
+footer {
+    color: #f00;
+    background-color: #101010;
+    margin-top: auto;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    height:210px;
+    width:100%;
+
+}
+
